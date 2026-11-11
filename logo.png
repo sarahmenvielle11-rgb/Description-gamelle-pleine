@@ -1,0 +1,199 @@
+css
+/* Variables pour changer facilement les couleurs */
+:root {
+    --bg-color: #faf8f5;
+    --primary: #1b4332;
+    --secondary: #d8f3dc;
+    --accent: #e76f51;
+    --text-dark: #1f2421;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .asso-name {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--primary);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.asso-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.btn-nav {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.2s;
+}
+
+.btn-nav:hover {
+    transform: translateY(-2px);
+}
+
+/* Section Hero Asymétrique */
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 5rem 8%;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: #4a5550;
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dcd7ce;
+}
+
+.stats strong {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+/* Effet cadre décalé sur la photo */
+.hero-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid var(--primary);
+    box-shadow: 14px 14px 0px var(--accent);
+}
+
+/* Section Cartes */
+.cards-section {
+    padding: 4rem 8% 6rem;
+}
+
+.cards-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 2px solid var(--primary);
+    box-shadow: 6px 6px 0px var(--primary);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translate(-3px, -3px);
+}
+
+.accent-card {
+    background-color: var(--secondary);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 8%;
+    font-size: 0.9rem;
+}
+
+/* Adaptation mobile */
+@media (max-width: 850px) {
+    .hero, .grid-cards {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    nav a:not(.btn-nav) {
+        display: none;
+    }
+}
