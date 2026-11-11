@@ -1,68 +1,83 @@
-html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation - Association Les Mains Vertes</title>
+    <title>Gamelles Pleines — 4 pattes pour se relever !</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Police moderne Google Fonts -->
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
 
-    <!-- En-tête avec logo et navigation -->
+    <!-- En-tête avec le logo de Gamelles Pleines -->
     <header class="navbar">
         <div class="logo-container">
-            <img src="logo.png" alt="Logo de l'association" class="logo">
-            <span class="asso-name">Les Mains Vertes</span>
+            <img src="logo.png" alt="Logo Gamelles Pleines" class="logo">
+            <div class="logo-text">
+                <span class="asso-name">Gamelles Pleines</span>
+                <span class="asso-tagline">4 pattes pour se relever !</span>
+            </div>
         </div>
         <nav>
-            <a href="#mission">Notre Mission</a>
+            <a href="#mission">La Mission</a>
             <a href="#actions">Nos Actions</a>
-            <a href="#rejoindre" class="btn-nav">Nous rejoindre</a>
+            <a href="#soutenir" class="btn-nav">Agir ensemble</a>
         </nav>
     </header>
 
     <!-- Section principale asymétrique -->
-    <main class="hero">
+    <main id="mission" class="hero">
         <div class="hero-text">
-            <span class="badge">Association Loi 1901</span>
-            <h1>Cultivons la nature au cœur de nos quartiers.</h1>
-            <p>Depuis 2018, nous transformons les espaces urbains inutilisés en jardins partagés accessibles à tous les habitants.</p>
+            <span class="badge">🐾 Fédération Nationale • Loi 1901</span>
+            <h1>Lutter contre l'exclusion sociale par la cause animale.</h1>
+            <p>Pour une personne en situation de précarité ou sans-abri, son animal est souvent son dernier lien affectif. Nous aidons les maîtres à nourrir, soigner et garder leur compagnon.</p>
+            
             <div class="stats">
-                <div><strong>12</strong> Jardins créés</div>
-                <div><strong>350+</strong> Bénévoles actifs</div>
+                <div><strong>420 000</strong> Repas / an</div>
+                <div><strong>2 300+</strong> Animaux aidés</div>
+                <div><strong>14</strong> Antennes en France</div>
             </div>
         </div>
+
         <div class="hero-image">
-            <img src="photo.jpg" alt="Bénévoles dans un jardin partagé">
+            <img src="photo.jpg" alt="Un bénévole et un chien lors d'une maraude Gamelles Pleines">
         </div>
     </main>
 
-    <!-- Section des actions en grille -->
+    <!-- Section des 3 piliers d'action -->
     <section id="actions" class="cards-section">
-        <h2>Nos trois piliers d'action</h2>
+        <h2>Comment agissons-nous sur le terrain ?</h2>
         <div class="grid-cards">
             <article class="card">
-                <h3>🌱 Éducation</h3>
-                <p>Ateliers hebdomadaires dans les écoles pour apprendre le cycle des plantes et le respect du vivant.</p>
+                <div class="card-icon">🥣</div>
+                <h3>Aide alimentaire & Maraudes</h3>
+                <p>Distribution régulière de croquettes, pâtées et accessoires lors de maraudes de proximité pour maintenir le lien social.</p>
             </article>
+
             <article class="card accent-card">
-                <h3>🤝 Lien social</h3>
-                <p>Des moments conviviaux chaque samedi matin autour du potager pour réunir toutes les générations.</p>
+                <div class="card-icon">🩺</div>
+                <h3>Soins vétérinaires</h3>
+                <p>Prise en charge financière des vaccins, de l'identification et de la stérilisation pour éviter les séparations forcées.</p>
             </article>
+
             <article class="card">
-                <h3>♻️ Écologie urbaine</h3>
-                <p>Création de zones de compostage collectif et préservation de la biodiversité locale en ville.</p>
+                <div class="card-icon">🏠</div>
+                <h3>Familles relais</h3>
+                <p>Accueil temporaire de l'animal lorsque son maître doit être hospitalisé ou entame une démarche de réinsertion.</p>
             </article>
         </div>
     </section>
 
+    <!-- Bannière d'appel à l'action -->
+    <section id="soutenir" class="cta-banner">
+        <h2>« Si j'aide le chien, j'aide le maître »</h2>
+        <p>Devenez bénévole en maraude, donnez des croquettes ou soutenez les soins vétérinaires.</p>
+        <a href="https://www.gamellespleines.fr/" target="_blank" class="btn-cta">Découvrir le site officiel</a>
+    </section>
+
     <!-- Pied de page -->
-    <footer id="rejoindre">
-        <p>Projet réalisé dans le cadre d'un exercice scolaire — Association fictive « Les Mains Vertes »</p>
-        <p>Contact : contact@lesmainsvertes-asso.fr</p>
+    <footer>
+        <p>Site réalisé dans le cadre d'un projet scolaire — Présentation de la <strong>Fédération Gamelles Pleines</strong> (Siège social : Caen)</p>
     </footer>
 
 </body>
